@@ -58,7 +58,7 @@ def get_citations_needed_report(URL):
 
 
 if __name__ == "__main__":
-    URL = 'https://en.wikipedia.org/wiki/Inca_Empire'
+    URL = 'https://en.wikipedia.org/wiki/Peanut_butter'
     print(scrape(URL))
     print(get_citations_needed_count(URL))
     print(get_citations_needed_report(URL))
