@@ -15,7 +15,7 @@ def scrape(url):
 
     titles = [result.find_parent("p").text for result in results]
     return titles
-    # print(titles)
+    print(titles)
 
     # paragraph = link_soup.select("paragraph")[1]
     # print(paragraph[1])
