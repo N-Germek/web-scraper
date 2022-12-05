@@ -14,7 +14,7 @@ def scrape(url):
     # print(results.text)
 
     titles = [result.find_parent("p").text for result in results]
-
+    return titles
     # print(titles)
 
     # paragraph = link_soup.select("paragraph")[1]
@@ -29,7 +29,6 @@ def scrape(url):
     # print(anchors.content)
 
     links = [anchor["href"] for anchor in anchors]
-    return titles
 
 
 # print(links)
