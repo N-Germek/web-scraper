@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def scrape(url):
-    # URL = 'https://en.wikipedia.org/wiki/Peanut_butter'
+    url = 'https://en.wikipedia.org/wiki/Peanut_butter'
     page = requests.get(url)
     # print(page.content)
     soup = BeautifulSoup(page.content, "html.parser")
@@ -52,8 +52,8 @@ def get_citations_needed_count(url):
     return len(paragraphs)
 
 
-def get_citations_needed_report(URL):
-    soup_results = scrape(URL)
+def get_citations_needed_report(url):
+    soup_results = scrape(url)
     return "\n".join([soup.strip() for soup in soup_results])
 
 
